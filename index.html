@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Basket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="chocolate-collection">
+            <h1>Select Your Chocolates</h1>
+
+            <div class="chocolates">
+                <div class="chocolate" data-name="Dairy Milk" data-price="30">
+                    <img src="./images/dairy-milk.jpg" alt="">
+                </div>
+
+                <div class="chocolate" data-name="Munch" data-price="10">
+                    <img src="./images/munch.jpg" alt="">
+                </div>
+                <div class="chocolate" data-name="Kitkat" data-price="20"><img src="./images/kitkat.jpg" alt=""></div>
+
+                <div class="chocolate" data-name="5star" data-price="20"><img src="./images/5star.jpg" alt=""></div>
+
+            </div>
+        </div>
+
+        <div class="selected-chocolates">
+            <div>
+                <h2>Your Bundle </h2>
+                <ul id="selectedList"></ul>
+            </div>
+            <p>
+                Total
+                <span><span id="totalPrice">0</span>Rs</span>
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
