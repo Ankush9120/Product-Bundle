@@ -12,13 +12,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (selectedChocolates.length < 8) {
                 selectedChocolates.push({ name, price });
-                updateSelectedList();
-                updateTotalPrice();
+                addNewChocolate();
+                calcualteTotalPrice();
             }
         });
     });
 
-    function updateSelectedList() {
+    function addNewChocolate() {
         selectedList.innerHTML = '';
         selectedChocolates.forEach(item => {
             const listItem = document.createElement('li');
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    function updateTotalPrice() {
+    function calcualteTotalPrice() {
         const total = selectedChocolates.reduce((acc, item) => acc + item.price, 0);
         totalPrice.textContent = total.toFixed(2);
     }
